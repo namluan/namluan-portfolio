@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Nam Luân</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css"/>
+    <link rel="stylesheet" href="./assets/lineicons.css">
+
+</head>
+<body>
+    <nav id="navigation">
+        <div class="logo">Nam Luân</div>
+        <div>
+            <ul class="nav-links"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/image/viet bike army.jpg" alt="pfp" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Bonjour, je suis</p>
+          <h1 class="title">Nam Luân</h1>
+          <p class="section__text__p2">Bienvenue sur mon Portfolio !</p>
+          <div class="btn-container">
+            <button
+              class="btn"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/nam-lu%C3%A2n-gu%C3%A9rin-6a1319272/" target="_blank" rel="noopener noreferrer"><i class="lni lni-linkedin-original" ></i></a>
+            <a href="https://github.com/namluan" target="_blank" rel="noopener noreferrer"><i class="lni lni-github-original" ></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">A propos de moi</h1>
+        <div class="section-container">
+          <!-- <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div> -->
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <a class="about-pic"><i class="lni lni-cloud-network"></i></a>
+                <h3>Formation</h3>
+                <p>Bac General<br />Spécialité NSI et Mathématiques</p>
+              </div>              
+              <div class="details-container2">
+                <a class="about-pic"><i class="lni lni-graph"></i></i></a>
+                <h3>Formation</h3>
+                <p>BTS SIO<br />Option SLAM</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                reprehenderit et laborum, rem, dolore eum quod voluptate
+                exercitationem nobis, nihil esse debitis maxime facere minus sint
+                delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                reiciendis ea magnam? Nulla, impedit fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/image/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#'"
+        />
+      </section>
+    <script src="script.js"></script>
+</body>
+</html>
