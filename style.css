@@ -125,7 +125,7 @@ section {
   }
   
   .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1.60rem;
     margin-bottom: 1rem;
   }
   
@@ -179,7 +179,7 @@ section {
   .about-containers {
     gap: 2rem;
     margin-bottom: 4rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
   
   .about-details-container {
@@ -228,9 +228,11 @@ section {
   }
   
   .experience-sub-title {
-    color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   
@@ -251,11 +253,66 @@ section {
   
   article {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
+    background: rgb(255, 255, 255);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+    transition: .5s ease;
+    
+  }
+
+  article:hover{
+    border-color: aqua;
+    transform: scale(1.02);
   }
   
   article .icon {
     cursor: default;
+    font-size: 150%;
+  }
+
+
+  /* Test anim */
+
+
+  .wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
   }
