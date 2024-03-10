@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Nam Luân</title>
+    <title>Nam Luân | Portfolio </title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="media.css"/>
     <link rel="stylesheet" href="./assets/lineicons.css">
 
 </head>
 <body>
+  <div class="cursor"></div>
+
     <nav id="navigation">
         <div class="logo">Nam Luân</div>
         <div>
@@ -27,7 +29,7 @@
         </div>
         <div class="section__text">
           <p class="section__text__p1"><span class="wave">👋🏻</span>Bonjour, je suis</p>
-          <h1 class="title"><span class="wave">👋🏻</span>Nam Luân</h1>
+          <h1 class="title">Nam Luân</h1>
           <p class="section__text__p2"><span id="multiple-text"></span></p>
           <div class="btn-container">
             <a href="./assets/CV Nam Luan GUERIN 2024 compressed.pdf" target="_blank">
@@ -42,8 +44,8 @@
             </button>
           </div>
           <div id="socials-container">
-            <a href="https://www.linkedin.com/in/nam-lu%C3%A2n-gu%C3%A9rin-6a1319272/" target="_blank" rel="noopener noreferrer"><i class="lni lni-linkedin-original" ></i></a>
-            <a href="https://github.com/namluan" target="_blank" rel="noopener noreferrer"><i class="lni lni-github-original" ></i></a>
+            <i class="lni lni-linkedin-original" onclick="location.href='https://www.linkedin.com/in/nam-lu%C3%A2n-gu%C3%A9rin-6a1319272/'"></i>
+            <i class="lni lni-github-original" onclick="location.href='https://github.com/namluan'"></i>
           </div>
         </div>
       </section>
@@ -88,7 +90,7 @@
           src="./assets/image/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#'"
+          onclick="location.href='#'"
         />
       </section>
 
@@ -100,7 +102,7 @@
               <h2 class="experience-sub-title">Developpement Frontend</h2>
               <div class="article-container">
                 <article>
-                  <a class="icon"><i class="lni lni-checkmark" ></i>
+                  <a class="icon">
                    <i class="lni lni-html5" ></i>
                   </a>
                   <div>
@@ -130,28 +132,6 @@
                   <div>
                     <h3>JavaScript</h3>
                     <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Material UI</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
               </div>
@@ -192,7 +172,41 @@
         </div>
       </section>
 
+      <section id="projects">
+        <div class="project_card">
+          <h1>Projet 1</h1>
+          <p>binks bow</p>
+        </div>
+        <div class="project_card">
+          <h1>Projet 2</h1>
+          <p>binks bow</p>
+        </div>
+        <div class="project_card">
+          <h1>Projet 3</h1>
+          <p>bagazegzaelgzekglzghzegkzeaf
+            azfafafasqdfqdfsqfqsfqsfqsdafkgohzegk</p>
+        </div>
+        <div class="project_card">
+          <h1>Projet 4</h1>
+          <p>binks bow</p>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <h1>Me contacter</h1>
+      </section>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" 
+    integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <script src="script.js"></script>
+
 </body>
 </html>
