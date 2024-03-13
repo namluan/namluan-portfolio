@@ -1,11 +1,6 @@
 /* General */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-.your-style {
-  font-family: 'Arket Sans';
-  font-weight: normal;
-  font-style: normal;
-}
 
 * {
   margin : 0;
@@ -15,8 +10,7 @@
 body {
     background-color: #eeeeee;
     background-size: cover;
-    /* font-family: "Work Sans", sans-serif; */
-    font-family: "Arket Sans";
+    font-family: "Work Sans", sans-serif;
 }
 
 html{
@@ -150,7 +144,7 @@ section {
   
   /* PROFILE SECTION */
   
-  #profile {
+  /* #profile {
     display: flex;
     justify-content: center;
     gap: 6rem;
@@ -197,7 +191,7 @@ section {
   #socials-container i:hover{
     transition: all 300ms ease;
     transform: scale(1.02);
-  }
+  } */
   
 /* BUTTONS */
 
@@ -438,7 +432,7 @@ section {
   }
 
   .text_section{
-    font-size: 130px;
+    font-size: 13vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -446,12 +440,18 @@ section {
 
   .profile h1{
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
   }
 
   .profile h2{
     position: absolute;
-    right: 50px;
-    bottom: 0;
+    right: 0;
+    bottom: 10vh;
+  }
+
+  .profile p{
+    position: absolute;
+    align-items: center;
+    font-size: 5vh;
   }

@@ -1,7 +1,6 @@
 gsap.registerPlugin(Flip);
 
 let mouseCursor = document.querySelector(".cursor");
-// let navlinks = document.querySelectorAll('.project_card');
 let btncont = document.querySelectorAll('.article-container');
 let clickableElements = document.querySelectorAll('a, button, .clickable-element, [onclick]'); // Sélectionne tous les éléments cliquables
 
@@ -17,49 +16,42 @@ var typed = new Typed('#multiple-text', {
     loop: true
 });
 
-function cursor(e){
-    console.log(e);
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
-}
+// function cursor(e){
+//     console.log(e);
+//     mouseCursor.style.top = e.pageY + 'px';
+//     mouseCursor.style.left = e.pageX + 'px';
+// }
 
 
-clickableElements.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        mouseCursor.classList.add("link-grow");
-    });
-    element.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove("link-grow");
-    });
-});
+// clickableElements.forEach(element => {
+//     element.addEventListener('mouseover', () => {
+//         mouseCursor.classList.add("link-grow");
+//     });
+//     element.addEventListener('mouseleave', () => {
+//         mouseCursor.classList.remove("link-grow");
+//     });
+// });
 
-navlinks.forEach(link => {
-    link.addEventListener('mouseover', ()=>{
-        mouseCursor.classList.add("link-grow");
-    });
-    link.addEventListener('mouseleave', ()=>{
-        mouseCursor.classList.remove("link-grow");
-    });
-});
+// navlinks.forEach(link => {
+//     link.addEventListener('mouseover', ()=>{
+//         mouseCursor.classList.add("link-grow");
+//     });
+//     link.addEventListener('mouseleave', ()=>{
+//         mouseCursor.classList.remove("link-grow");
+//     });
+// });
 
-btncont.forEach(link => {
-    link.addEventListener('mouseover', ()=>{
-        mouseCursor.classList.add("link-grow");
-    });
-    link.addEventListener('mouseleave', ()=>{
-        mouseCursor.classList.remove("link-grow");
-    });
-});
+// btncont.forEach(link => {
+//     link.addEventListener('mouseover', ()=>{
+//         mouseCursor.classList.add("link-grow");
+//     });
+//     link.addEventListener('mouseleave', ()=>{
+//         mouseCursor.classList.remove("link-grow");
+//     });
+// });
 
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-})
 
-ScrollReveal().reveal('.profile h1', {origin:'top'});
-
+// let navlinks = document.querySelectorAll('.project_card');
 // const cards = document.querySelectorAll('.project_card');
 
 // cards.forEach((card, index)=>{
