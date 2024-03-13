@@ -1,21 +1,28 @@
 /* General */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.your-style {
+  font-family: 'Arket Sans';
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
-    margin : 0;
-    padding: 0;
+  margin : 0;
+  padding: 0;
 }
 
 body {
     background-color: #eeeeee;
     background-size: cover;
-    font-family: "Work Sans", sans-serif;
+    /* font-family: "Work Sans", sans-serif; */
+    font-family: "Arket Sans";
 }
 
 html{
     scroll-behavior: smooth;
 }
+
 
 .arrow {
     position: fixed;
@@ -27,8 +34,8 @@ html{
   }
 
   .cursor{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: rgba(42, 40, 40, 0.375);
     /* border: 2px solid rgba(53, 52, 52, 0.53); */
     border-radius: 50%;
@@ -54,22 +61,53 @@ a,
 
 /* Navigation */
 
-nav,
-.nav-links {
+/* nav,
+.nav-links{
   display: flex;
+  position: fixed;
+  z-index: 100;
+
+}
+
+nav .logo{
   
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 17vh;
+  padding: 2rem;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  top: 0;
+  right: 0;
+} */
+
+nav {
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo{
+  padding-left: 3rem;
 }
 
 .nav-links a {
@@ -100,11 +138,10 @@ nav {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+  padding-top: 20vh;
+
+  box-sizing: border-box;
+  min-height: fit-content;
   }
   
   .section-container {
@@ -117,14 +154,11 @@ section {
     display: flex;
     justify-content: center;
     gap: 6rem;
-    height: 70vh;
-  }
-  
-  .section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    height: 40px;
+    background-color: rgb(231, 231, 21);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
   }
   
   .section__text {
@@ -195,13 +229,14 @@ section {
 
 #about {
     position: relative;
-    margin-top: 6rem;
+    background-color: aqua;
   }
   
   .about-containers {
     gap: 2rem;
     margin-bottom: 4rem;
     margin-top: 5rem;
+    padding: 0 10rem;
   }
   
   .about-details-container {
@@ -302,15 +337,15 @@ section {
 
   /* Project Section */
 
-  #projects{
+  /* #projects{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 3rem;
-    margin: 10rem 30rem;
+    margin: 10rem 20rem;
   }
 
   .project_card{
-    height: 15rem;
+    height: 10rem;
     border-radius: 1rem;
     cursor: pointer;
     display: flex;
@@ -344,6 +379,12 @@ section {
 
   .project_card.is-inactive{
     grid-column: span 2;
+  } */
+
+  /* footer section */
+
+  #contact{
+    padding: 3rem;
   }
 
   /* Wave emoji animation */
@@ -384,3 +425,33 @@ section {
     }
   }
   
+
+  /* Profile  */
+  
+  .profile{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background-color: rgb(231, 231, 21);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .text_section{
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .profile h2{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+  }

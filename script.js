@@ -1,7 +1,7 @@
 gsap.registerPlugin(Flip);
 
 let mouseCursor = document.querySelector(".cursor");
-let navlinks = document.querySelectorAll('.project_card');
+// let navlinks = document.querySelectorAll('.project_card');
 let btncont = document.querySelectorAll('.article-container');
 let clickableElements = document.querySelectorAll('a, button, .clickable-element, [onclick]'); // Sélectionne tous les éléments cliquables
 
@@ -51,31 +51,39 @@ btncont.forEach(link => {
     });
 });
 
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+})
 
-const cards = document.querySelectorAll('.project_card');
+ScrollReveal().reveal('.profile h1', {origin:'top'});
 
-cards.forEach((card, index)=>{
-    card.addEventListener('click',()=>{
-        const state = Flip.getState(cards);
+// const cards = document.querySelectorAll('.project_card');
 
-        const isCardActive = card.classList.contains("active");
-        cards.forEach((otherCard, otherIndex)=>{
-            otherCard.classList.remove("active");
-            otherCard.classList.remove("is-inactive");
-            if(!isCardActive && index !== otherIndex){
-                otherCard.classList.add("is-inactive");
-            }
-        });
-        if(!isCardActive) card.classList.add("active");
+// cards.forEach((card, index)=>{
+//     card.addEventListener('click',()=>{
+//         const state = Flip.getState(cards);
+
+//         const isCardActive = card.classList.contains("active");
+//         cards.forEach((otherCard, otherIndex)=>{
+//             otherCard.classList.remove("active");
+//             otherCard.classList.remove("is-inactive");
+//             if(!isCardActive && index !== otherIndex){
+//                 otherCard.classList.add("is-inactive");
+//             }
+//         });
+//         if(!isCardActive) card.classList.add("active");
 
 
-        Flip.from(state, {
-            duration: 1,
-            ease: "expo.out",
-            absolute: true,
-            // onComplete: () => {
-            //     gsap.to('.project_card p', {y : 500})
-            // }
-        });
-    });
-});
+//         Flip.from(state, {
+//             duration: 1,
+//             ease: "expo.out",
+//             absolute: true,
+//             // onComplete: () => {
+//             //     gsap.to('.project_card p', {y : 500})
+//             // }
+//         });
+//     });
+// });
