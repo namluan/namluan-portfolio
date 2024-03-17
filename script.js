@@ -33,11 +33,11 @@ const splitTypes = document.querySelectorAll('.about-content')
 //     })
 // })
 
-gsap.to(".about-content", {
-    scrollTrigger: ".about-content", // start animation when ".box" enters the viewport
-    x: 500,
+// gsap.to(".about-content", {
+//     scrollTrigger: ".about-content", // start animation when ".box" enters the viewport
+//     x: 500,
     
-  });
+//   });
 
 function revealfun(){
     window.sr = ScrollReveal({ duration:(900), distance:'350px', easing:'ease-out'});
