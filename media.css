@@ -3,6 +3,19 @@
       height: 100vh;
       margin-bottom: 0rem;
     }
+
+    #about{
+      height: 100vh;
+      flex-wrap: wrap;
+    }
+
+    #experience{
+      height: 100vh;
+    }
+
+    #projects{
+      height: 100vh;
+    }
     .about-containers {
       flex-wrap: wrap;
     }
@@ -13,16 +26,19 @@
   }
 
   @media screen and (max-width: 1200px) {
+    #about{
+      display: flex;
+    }
     #desktop-nav {
       display: none;
     }
     #hamburger-nav {
       display: flex;
     }
-    #experience,
+   /* #experience,
     .experience-details-container {
       margin-top: 2rem;
-    }
+    }*/
     #profile,
     .section-container {
       display: block;

@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="media.css"/>
     <link rel="stylesheet" href="./assets/lineicons.css">
-    <link rel="preload" href="ArketSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-
 </head>
 <body>
   <div class="cursor"></div>
@@ -27,8 +25,12 @@
 
     <div class="profile">
       <div class="text_section">
-        <h1>Nam Luân</h1>
+        <h1 class="testscroll">Nam Luân</h1>
         <p>étudiant en BTS SIO</p>
+        <div class="socials-container">
+          <i class="lni lni-linkedin-original" onclick="location.href='https://www.linkedin.com/in/nam-lu%C3%A2n-gu%C3%A9rin-6a1319272/'"></i>
+          <i class="lni lni-github-original" onclick="location.href='https://github.com/namluan'"></i>
+        </div>
         <h2>Portfolio</h2> 
       </div>   
     </div>
@@ -38,74 +40,92 @@
           <h1 class="title">Nam Luân</h1>
           <p class="section__text__p2"><span id="multiple-text"></span></p>
           <div class="btn-container">
-            <a href="./assets/CV Nam Luan GUERIN 2024 compressed.pdf" target="_blank">
-                <button
-                class="btn"
-                >
-                Mon CV
-                </button>
-            </a>
+            
             <button class="btn" onclick="location.href='./#contact'">
               Contact Info
             </button>
           </div>
-          <div id="socials-container">
-            <i class="lni lni-linkedin-original" onclick="location.href='https://www.linkedin.com/in/nam-lu%C3%A2n-gu%C3%A9rin-6a1319272/'"></i>
-            <i class="lni lni-github-original" onclick="location.href='https://github.com/namluan'"></i>
-          </div>
+          
         </div>
       </section> -->
 
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">A propos de moi</h1>
-        <div class="section-container">
-          <!-- <div class="section__pic-container">
-            <img
-              src="./assets/about-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div> -->
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <a class="about-pic"><i class="lni lni-cloud-network"></i></a>
-                <h3>Formation</h3>
-                <p>Bac General<br />Spécialité NSI et Mathématiques</p>
-              </div>              
-              <div class="details-container">
-                <a class="about-pic"><i class="lni lni-graph"></i></i></a>
-                <h3>Formation</h3>
-                <p>BTS SIO<br />Option SLAM</p>
+
+      <div id="about" >
+        <h1>A propos de moi</h1>
+        <p class="about-content">Je suis Nam Luân, étudiant en BTS SIO</p>  
+          <div class="parcour-pro">
+            <div class="timeline-row">
+              <div class="timeline-column">
+                <h2 class="titre">Parcours scolaire</h2>
+                <div class="container-box">
+                  <div class="container-content">
+                    <div class="content">
+                      <h3>Bac général spécialité Mathématiques et NSI</h3>
+                      <small>2019-2022</small>
+                      <p>Lycée Descartes, Antony 92160</p>
+                      <br>
+                    </div>
+                  </div>  
+                </div>
+                <div class="container-box">
+                  <div class="container-content">
+                    <div class="content">
+                      <h3>BTS SIO option SLAM</h3>
+                      <small>2022-2024</small>
+                      <p>Lycée Polyvalent de Cachan, Cachan 94230</p>
+                      <br>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="timeline-column">
+                <h2 class="titre">Parcours professionel</h2>
+                <div class="container-box">
+                  <div class="container-content">
+                    <div class="content">
+                      <h3>Carrefour</h3>
+                      <small>2022-2023</small>
+                      <p>Siège mondial de Carrefour, Massy 91300</p>
+                      <p>Stage de 1ère année de BTS</p>
+                    </div>
+                  </div>  
+                </div>
+                <div class="container-box">
+                  <div class="container-content">
+                    <div class="content">
+                      <h3>Christian Louboutin</h3>
+                      <small>2023-2024</small>
+                      <p>Christian Louboutin, Paris 75001</p>
+                      <p>Stage de 2ème année de BTS</p>
+                    </div>
+                  </div>  
+                </div>
               </div>
             </div>
-            <div class="text-container">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
-              </p>
-            </div>
           </div>
-        </div>
-        <img
-          src="./assets/image/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#'"
-        />
-      </section>
+          
+          <!-- <div class="apropos">
+            <h2>Je Suis</h2>
+            <p>Elève en BTS SIO en option SLAMlm,qmkldskvkmskmlzlme;ldemle
+              sdl,fmsl,mlsd,gm,smld,
+            </p>
+            <a href="./assets/CV Nam Luan GUERIN 2024 compressed.pdf" target="_blank">
+              <button
+              class="btn"
+              >
+              Mon CV
+              </button>
+          </a>
+          </div> -->
+      </div>
 
       <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
+        <p class="exp-title">Mes</p>
+        <h1 class="exp-subtitle">Compétences</h1>
+        <div class="exp-details-container">
           <div class="about-containers">
-              <h2 class="experience-sub-title">Developpement Frontend</h2>
+              <h2 class="exp-subtitle">Developpement Frontend</h2>
               <div class="article-container">
                 <article>
                   <a class="icon">
@@ -142,7 +162,7 @@
                 </article>
               </div>
             </div>
-              <h2 class="experience-sub-title">Developpement Backend</h2>
+              <h2 class="exp-subtitle">Developpement Backend</h2>
               <div class="article-container">
                 <article>
                   <a class="icon">
@@ -178,24 +198,37 @@
         </div>
       </section>
 
-      <!-- <section id="projects">
-        <div class="project_card">
-          <h1>Projet 1</h1>
-          <p>binks bow</p>
-        </div>
-        <div class="project_card">
-          <h1>Projet 2</h1>
-          <p>binks bow</p>
-        </div>
-        <div class="project_card">
-          <h1>Projet 3</h1>
-          <p>bagazegzaelgzekglzghzegkzeaf
-            azfafafasqdfqdfsqfqsfqsfqsdafkgohzegk</p>
-        </div>
-        <div class="project_card">
-          <h1>Projet 4</h1>
-          <p>binks bow</p>
-        </div>
+      <section id="projects">
+        <div class="card_container">
+          <div class="project_card">
+            <img src="assets/image/viet bike army.jpg">
+            <div class="card_content">
+              <h1>Projet 1</h1>
+              <p>binks bow</p>
+            </div>
+          </div>
+          <div class="project_card">
+            <img src="assets/image/viet bike army.jpg">
+            <div class="card_content">
+              <h1>Projet 2</h1>
+              <p>binkzgzageg</p>
+            </div>
+          </div>
+          <div class="project_card">
+            <img src="assets/image/viet bike army.jpg">
+            <div class="card_content">
+              <h1>Projet 3</h1>
+              <p>binkzgzageg</p>
+            </div>
+          </div>  
+          <div class="project_card">
+            <img src="assets/image/viet bike army.jpg">
+            <div class="card_content">
+              <h1>Projet 4</h1>
+              <p>binkzgzageg</p>
+            </div>
+          </div>
+        </div>    
       </section>
       
       <section id="contact">
@@ -204,19 +237,12 @@
           <p>test</p>
         </footer>
         
-      </section> -->
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" 
-    integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>    
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script src="script.js"></script>
-
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script.js"></script> 
+ 
 </body>
 </html>

@@ -1,20 +1,54 @@
-gsap.registerPlugin(Flip);
-
+// Init
+gsap.registerPlugin(ScrollTrigger) 
+// body
 let mouseCursor = document.querySelector(".cursor");
-let btncont = document.querySelectorAll('.article-container');
 let clickableElements = document.querySelectorAll('a, button, .clickable-element, [onclick]'); // Sélectionne tous les éléments cliquables
+const splitTypes = document.querySelectorAll('.about-content')
 
 
+// window.addEventListener('mousemove', mouseCursor);
 
-window.addEventListener('mousemove', cursor);
+// var typed = new Typed('#multiple-text', {
+//     strings: ['Voici mon Portfolio !'],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
 
-var typed = new Typed('#multiple-text', {
-    strings: ['Voici mon Portfolio !'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+// splitTypes.forEach((char, i) => {
+//     const text = new SplitType(char, { types: 'chars'})
+
+//     gsap.from(text.chars,{
+//         scrollTrigger: {
+//             trigger: char,
+//             start: 'top 80%',
+//             end: 'top 20%',
+//             scrub: false,
+//             markers: true,
+//         },
+//         y:100,
+//         opacity: 0.2,
+//         stagger: 0.1
+//     })
+// })
+
+gsap.to(".about-content", {
+    scrollTrigger: ".about-content", // start animation when ".box" enters the viewport
+    x: 500,
+    
+  });
+
+function revealfun(){
+    window.sr = ScrollReveal({ duration:(900), distance:'350px', easing:'ease-out'});
+    sr.reveal('.profile h1', {origin:'left', reset:true});
+    sr.reveal('.profile h2', {origin:'right', reset:true});
+    sr.reveal('.timeline');
+};
+
+window.addEventListener('load', ()=>{
+    revealfun();
+})
 
 // function cursor(e){
 //     console.log(e);
@@ -53,7 +87,7 @@ var typed = new Typed('#multiple-text', {
 
 // let navlinks = document.querySelectorAll('.project_card');
 // const cards = document.querySelectorAll('.project_card');
-
+// let btncont = document.querySelectorAll('.article-container');
 // cards.forEach((card, index)=>{
 //     card.addEventListener('click',()=>{
 //         const state = Flip.getState(cards);
