@@ -6,6 +6,19 @@ let clickableElements = document.querySelectorAll('a, button, .clickable-element
 const splitTypes = document.querySelectorAll('.about-content')
 
 
+
+document.addEventListener('scroll', ()=>{
+    const nav = document.querySelector('.nav-links');
+    const nav2 = document.querySelector('.logo');
+
+    if (window.scrollY > 900) {
+        nav.classList.add('scrolled');
+        nav2.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+        nav2.classList.remove('scrolled');
+    }
+})
 // window.addEventListener('mousemove', mouseCursor);
 
 // var typed = new Typed('#multiple-text', {

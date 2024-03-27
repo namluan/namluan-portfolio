@@ -58,34 +58,6 @@ a,
 
 /* Navigation */
 
-/* nav,
-.nav-links{
-  display: flex;
-  position: fixed;
-  z-index: 100;
-
-}
-
-nav .logo{
-  
-}
-
-nav {
-  justify-content: space-between;
-  align-items: center;
-  height: 17vh;
-  padding: 2rem;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1rem;
-  top: 0;
-  right: 0;
-} */
-
-
 nav {
   top: 0;
   right: 0;
@@ -98,6 +70,8 @@ nav {
   align-items: center;
 }
 
+
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -107,6 +81,7 @@ nav {
 .logo{
   padding-left: 3rem;
   color: #2D2305;
+  transition: color 0.4s ease-in-out;
 }
 
 .nav-links a {
@@ -114,6 +89,7 @@ nav {
     position: relative;
     text-decoration: none;
     text-decoration-color: white;
+    transition: color 0.4s ease-in-out;
   }
 
   .nav-links a::after{
@@ -132,6 +108,17 @@ nav {
     width: 100%;
 }
 
+.nav-links.scrolled a{
+  color: aliceblue;
+}
+
+.logo.scrolled{
+  color: aliceblue;
+}
+
+.nav-links.scrolled a::after{
+  background-color: #FFE629;
+}
 
 
 /* SECTIONS */
@@ -423,6 +410,7 @@ section {
     box-shadow: 0px 2px 4px #14120B;
     overflow: hidden;
     transition: .5s ease;
+    cursor: pointer;
   }
 
   .project_card img{
@@ -593,3 +581,10 @@ section {
     border-color: #be9a23;
     transform: scale(1.02);
   }
+
+/*Veille*/
+
+.veille{
+  display: flex;
+  justify-content: center;
+}
