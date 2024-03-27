@@ -25,6 +25,36 @@
     }
   }
 
+  @media screen and (max-width: 1600px) {
+    .text_section{
+      font-size: 5rem;
+    }
+
+    .btn-cv{
+      bottom: 28%;
+    }
+
+    #about{
+      height: 100vh;
+      flex-wrap: wrap;
+    }
+
+    #experience{
+      height:fit-content;
+    }
+
+    #projects{
+      height: 100vh;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+
   @media screen and (max-width: 1023px) {
 
     .text_section{
