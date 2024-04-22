@@ -35,8 +35,12 @@
     }
 
     #about{
-      height: 100vh;
+      height: 150vh;
       flex-wrap: wrap;
+    }
+
+    .timeline-column .titre{
+      margin-top: 8rem;
     }
 
     #experience{
