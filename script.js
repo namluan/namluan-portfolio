@@ -1,7 +1,7 @@
 // Init
 gsap.registerPlugin(ScrollTrigger) 
 // body
-let mouseCursor = document.querySelector(".cursor");
+const mouseCursor = document.querySelector(".cursor");
 let clickableElements = document.querySelectorAll('a, button, .clickable-element, [onclick]'); // Sélectionne tous les éléments cliquables
 const splitTypes = document.querySelectorAll('.about-content')
 
@@ -18,7 +18,14 @@ window.addEventListener("scroll", function() {
         nav2.classList.remove('scrolled');
     }
   });
-// window.addEventListener('mousemove', mouseCursor);
+  
+window.addEventListener('mousemove', (e)=> {
+    let x = e.pageX;
+    let y = e.pageY;
+
+    mouseCursor.style.top = y + "px";
+    mouseCursor.style.left = x + "px";
+});
 
 // var typed = new Typed('#multiple-text', {
 //     strings: ['Voici mon Portfolio !'],
@@ -62,21 +69,15 @@ window.addEventListener('load', ()=>{
     revealfun();
 })
 
-// function cursor(e){
-//     console.log(e);
-//     mouseCursor.style.top = e.pageY + 'px';
-//     mouseCursor.style.left = e.pageX + 'px';
-// }
 
-
-// clickableElements.forEach(element => {
-//     element.addEventListener('mouseover', () => {
-//         mouseCursor.classList.add("link-grow");
-//     });
-//     element.addEventListener('mouseleave', () => {
-//         mouseCursor.classList.remove("link-grow");
-//     });
-// });
+clickableElements.forEach(element => {
+    element.addEventListener('mouseover', () => {
+        mouseCursor.classList.add("link-grow");
+    });
+    element.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove("link-grow");
+    });
+});
 
 // navlinks.forEach(link => {
 //     link.addEventListener('mouseover', ()=>{
